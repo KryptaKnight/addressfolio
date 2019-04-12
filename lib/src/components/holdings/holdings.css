@@ -1,0 +1,46 @@
+:host {
+    display: block;
+    background-color: black;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.header {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    min-width: 100px;
+    padding: 10px 5px;
+    border-bottom: 2px solid white;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+
+tbody > tr > td {
+    padding: 10px 5px;
+    border-bottom: 1px solid gray;
+    font-size: 12px;
+}
+
+tbody > tr:nth-child(even) > td {
+}
+
+td {
+    border: none;
+}
+
+.msg {
+    padding: 20px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}

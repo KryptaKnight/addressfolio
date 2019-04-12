@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>Coin</th>
+            <th>Holding</th>
+            <th>USD/Coin</th>
+            <th>Holding USD</th>
+        </tr>
+    </thead>
+
+    <tbody *ngIf="service.holdings.length != 0">
+        <tr *ngFor="let coin of service.holdings; let i = index">
+            <td>{{coin.name}}</td>
+            <td>{{coin.amount}}</td>
+            <td>{{coin.usdPerCoin}}</td>
+            <td>{{coin.holdingUsd}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="service.holdings.length == 0" class="msg">
+    No wallets with non-zero balance! Add wallet address below.
+</div>

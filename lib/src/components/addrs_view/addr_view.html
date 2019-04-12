@@ -1,0 +1,4 @@
+<div class="title">{{editor.coinName}}</div>
+
+<addr-add [editor]="editor"></addr-add>
+<addr-list [addrs]="editor.addrs" (removed)="editor.remove($event)"></addr-list>

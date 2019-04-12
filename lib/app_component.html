@@ -1,0 +1,24 @@
+<div class="header">
+    <div class="title">KryptoKnight</div>
+    <div class="area"></div>
+    <div *ngIf="service.user == null" class="user">
+        <div>Login</div>
+        <div>Sign up</div>
+    </div>
+    <div *ngIf="service.user != null" class="user">
+        <div>{{user.name}}</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+        <holdings></holdings>
+
+        <basket-editor></basket-editor>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="version">Version: 1.1</div>
+    <div class="copyrights">© 2017 Itlly Vadai Chuttiny production. All Rights Reserved.</div>
+</div>

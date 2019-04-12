@@ -1,0 +1,2 @@
+serializers:
+  - lib/server/api/api.dart

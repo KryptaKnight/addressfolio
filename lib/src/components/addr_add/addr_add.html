@@ -1,0 +1,13 @@
+<div class="container">
+  <material-input label="Add new address"
+                  autoFocus floatingLabel style="width:80%"
+                  [(ngModel)]="newAddr"
+                  (keyup.enter)="add()">
+  </material-input>
+
+  <material-fab mini raised
+                (trigger)="add()"
+                [disabled]="newAddr.isEmpty">
+    <glyph icon="add"></glyph>
+  </material-fab>
+</div>
